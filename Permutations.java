@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Permutations {
 
     public static void main(String[] args) {
-        String csvFile = "input.csv";
+        String csvFile = args[0];
 
         BufferedReader br = null;
         String line = "";
@@ -68,7 +68,7 @@ public class Permutations {
             for (int i = 0; i < n; i++) {
                 System.out.print(arr[i][indexes[i]]);
             }
-            System.out.print(" ");
+            System.out.print(", ");
 
             // for check the 2d matrix from rightmost rows
             int next = n - 1;
